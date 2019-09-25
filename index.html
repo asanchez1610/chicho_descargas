@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Descarga Base 64</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" id="linkTheme" href="bootstrap/css/yeti.bootstrap.min.css">
+    <link rel="stylesheet" id="linkTheme" href="bootstrap/css/cerulean.bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -34,9 +34,11 @@
                     <form class="form-inline my-2 my-lg-0">
                         <div class="form-group">
                             <span class="labelTheme">Extensión: &nbsp;&nbsp;</span>
-                            <input class="form-control mr-sm-2" id = "extension" value = ".zip" style="max-width: 60px" type="text" >
+                            <input class="form-control mr-sm-2" id="extension" value=".zip" style="max-width: 60px"
+                                type="text">
                             <span class="labelTheme">Tema: &nbsp;&nbsp;</span>
                             <select id="selectTheme" class="form-control" placeholder="Search">
+                                <option value="cerulean">Cerulean</option>
                                 <option value="yeti">Yeti</option>
                                 <option value="lumen">Lumen</option>
                                 <option value="materia">Materia</option>
@@ -69,9 +71,10 @@
                 <h5>Chicho Mensaje!</h5>
                 <p class="mb-0">Debes ingresar un hash de base 64 correcto, para realizar la descarga. Los archivos
                     actuales de descarga por defecto es de tipo zip el cual se tendran que descomprimir de forma manual.
-                    Si deseas cambiar la extensión del archivo solo hay que cambiar el cuadro de texto <strong>Extensión</strong>.
+                    Si deseas cambiar la extensión del archivo solo hay que cambiar el cuadro de texto
+                    <strong>Extensión</strong>.
                 </p>
-                    
+
             </div>
         </div>
 
