@@ -2,10 +2,20 @@
     margin-top: 15px;
 }
 
-.hidden{
-    display: none;
+.oculto{
+    display: none !important;
 }
 
 .labelTheme{
     color: #fff;
+}
+
+.jumbotron {
+    padding: 1rem 2rem !important;
+}
+
+.root {
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }

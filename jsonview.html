@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Descarga Base 64</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" id="linkTheme" href="bootstrap/css/cerulean.bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="jsonview/jquery.json-viewer.css">
+    <link rel="stylesheet" id="linkTheme" href="bootstrap/css/cerulean.bootstrap.min.css">
 </head>
 
 <body>
@@ -33,9 +34,6 @@
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
                         <div class="form-group">
-                            <span class="labelTheme">Extensión: &nbsp;&nbsp;</span>
-                            <input class="form-control mr-sm-2" id="extension" value=".zip" style="max-width: 60px"
-                                type="text">
                             <span class="labelTheme">Tema: &nbsp;&nbsp;</span>
                             <select id="selectTheme" class="form-control" placeholder="Search">
                                 <option value="cerulean">Cerulean</option>
@@ -58,24 +56,23 @@
 
     <section>
         <div class="container container-panel-main">
+            <div class="row">
+                <div class="col" >
             <fieldset>
                 <div class="form-group">
-                    <label for="exampleTextarea">Ingresa el hash de base 64</label>
-                    <textarea class="form-control" id="hasBase64Text" rows="12"></textarea>
+                    <label for="exampleTextarea">Ingresa el Texto Json</label>
+                    <textarea class="form-control" id="hasBase64Text" rows="16"></textarea>
                 </div>
                 <button id="btnProcesar" class="btn btn-primary">Procesar</button>
                 <button id="btnLimpiar" class="btn btn-success">Limpiar</button>
-                <a id="linkDescarga" href="#" class="btn btn-warning oculto">Descargar</a>
             </fieldset>
-            <div class="alert alert-warning container-panel-main">
-                <h5>Chicho Mensaje!</h5>
-                <p class="mb-0">Debes ingresar un hash de base 64 correcto, para realizar la descarga. Los archivos
-                    actuales de descarga por defecto son de tipo zip, el cual se tendrá que descomprimir de forma manual.
-                    Si deseas cambiar la extensión del archivo solo hay que cambiar el cuadro de texto
-                    <strong>Extensión</strong>.
-                </p>
-
+        </div>
+        <div class="col" >
+                <label for="exampleTextarea">Json View</label>
+                <div class="jumbotron root"></div>
             </div>
+        </div>
+         
         </div>
 
     </section>
@@ -85,6 +82,6 @@
 <script src="jquery-3.3.1.slim.min.js"></script>
 <script src="popper.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
-
+<script src="jsonview/jquery.json-viewer.js"></script>
+<script src="viewer.js"></script>
 </html>
