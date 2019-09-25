@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Descarga Base 64</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" id="linkTheme" href="bootstrap/css/yeti.bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Chicho Apps</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Descarga directa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Json View (En proceso)</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <div class="form-group">
+                            <span class="labelTheme">Cambiar de tema: &nbsp;&nbsp;</span>
+                            <select id="selectTheme" class="form-control" placeholder="Search">
+                                <option value="yeti">Yeti</option>
+                                <option value="lumen">Lumen</option>
+                                <option value="materia">Materia</option>
+                                <option value="flaty">Flaty</option>
+                                <option value="sandstone">SandStone</option>
+                                <option value="simplex">Simplex</option>
+                                <option value="united">United</option>
+                                <option value="litera">Litera</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section>
+        <div class="container container-panel-main">
+            <fieldset>
+                <div class="form-group">
+                    <label for="exampleTextarea">Ingresa el hash de base 64</label>
+                    <textarea class="form-control" id="hasBase64Text" rows="12"></textarea>
+                </div>
+                <button id="btnProcesar" class="btn btn-primary">Procesar</button>
+                <button id="btnLimpiar" class="btn btn-success">Limpiar</button>
+                <a id="linkDescarga" href="#" class="btn btn-warning hidden">Descargar</a>
+            </fieldset>
+            <div class="alert alert-warning container-panel-main">
+                <h5>Chicho Mensaje!</h5>
+                <p class="mb-0">Debes ingresar un hash de base 64 correcto, para realizar la descarga. Los archivos
+                    actuales de descarga son de tipo zip el cual se tendran que descomprimir de forma manual.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+</body>
+<script src="jquery-3.3.1.slim.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</html>
