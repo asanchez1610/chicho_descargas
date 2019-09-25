@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const linkDescarga = document.querySelector('#linkDescarga');
     const textArea = document.querySelector('#hasBase64Text');
     const selectTheme = document.querySelector('#selectTheme');
+    const extension = document.querySelector('#extension');
 
     selectTheme.addEventListener('change', (e) => {
         console.log(e.target.value);
@@ -13,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btnProcesar.addEventListener('click', () => {
         if (textArea.value) {
-            linkDescarga.download = 'descarga_directa.zip';
+            linkDescarga.download = `descarga_directa${extension.value}`;
             linkDescarga.href = 'data:application/octet-stream;base64,' + textArea.value;
             linkDescarga.classList.remove('hidden');
         } else {
