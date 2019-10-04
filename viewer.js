@@ -23,6 +23,15 @@ document.addEventListener('DOMContentLoaded', () => {
             withLinks: true
         };
         $('.root').jsonViewer(input, options);
+		
+		try {
+			var tmp = JSON.parse(textArea.val());
+			textArea.val(JSON.stringify(tmp, null, '\t'));
+		} catch(e) {
+			return alert("Cannot read format JSON: " + e);
+		}
+		
+		
 
     });
 
